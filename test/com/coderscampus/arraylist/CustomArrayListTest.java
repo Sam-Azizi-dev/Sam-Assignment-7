@@ -41,8 +41,8 @@ class CustomArrayListTest {
 	 @Test
 	 void testRemove() {
 		 System.out.println(newList.toString());
-		 // newList.add(5, "newitem"+1);
-	     //System.out.println(newList.toString());
+		  newList.add(5, "newitem"+1);
+	     System.out.println(newList.toString());
 		  newList.remove(5);
 		  System.out.println(newList.toString());
 		  assertEquals(null, newList.get(5));
