@@ -41,9 +41,14 @@ class CustomArrayListTest {
 	 @Test
 	 void testRemove() {
 		 System.out.println(newList.toString());
-		  newList.add(5, "newitem"+1);
+		 for (i = 0; i < 15; i++) {
+				newList.add("item: " + i);
+			}
 	     System.out.println(newList.toString());
 		  newList.remove(5);
+		  newList.remove(7);
+		  newList.remove(9);
+		  
 		  System.out.println(newList.toString());
 		  assertEquals(null, newList.get(5));
 	 }
