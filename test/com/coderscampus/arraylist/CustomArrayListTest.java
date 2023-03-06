@@ -26,31 +26,31 @@ class CustomArrayListTest {
 	}
 
 	@Test
-	 void testGet() {
-		 newList.get(i);
-	 }
-	
-	 @Test
-	 void testAddIntT() {
-		 System.out.println(newList.toString());
-	  newList.add(5, "newitem"+1);
-	  System.out.println(newList.toString());
-	  assertEquals("newitem"+1, newList.get(5));
-	 }
-	
-	 @Test
-	 void testRemove() {
-		 System.out.println(newList.toString());
-		 for (i = 0; i < 15; i++) {
-				newList.add("item: " + i);
-			}
-	     System.out.println(newList.toString());
-		  newList.remove(5);
-		  newList.remove(7);
-		  newList.remove(9);
-		  
-		  System.out.println(newList.toString());
-		  assertEquals(null, newList.get(5));
-	 }
+	void testGet() {
+		newList.get(i);
+	}
+
+	@Test
+	void testAddIntT() {
+		System.out.println(newList.toString());
+		newList.add(5, "newitem" + 1);
+		System.out.println(newList.toString());
+		assertEquals("newitem" + 1, newList.get(5));
+	}
+
+	@Test
+	void testRemove() {
+		System.out.println(newList.toString());
+		for (i = 0; i < 10; i++) {
+			newList.add("item: " + i);
+		}
+		System.out.println(newList.toString());
+		newList.remove(7);
+		newList.add(3, "newitem");
+		newList.add(5, "newitem");
+		newList.remove(10);
+		System.out.println(newList.toString());
+
+	}
 
 }
